@@ -14,7 +14,7 @@ public class Final : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Time.timeScale = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
