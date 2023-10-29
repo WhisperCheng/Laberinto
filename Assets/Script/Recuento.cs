@@ -14,7 +14,7 @@ public class Recuento : MonoBehaviour
     void Start()
     {
         monedas = 0;
-        recuento.text = "Contador = ";
+        recuento.text = "Monedas";
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class Recuento : MonoBehaviour
         if (collision.gameObject.tag == "Monedas") 
         {
             monedas++;
-            recuento.text = "monedas" + monedas;
+            recuento.text = "Monedas " + monedas;
         }
     }
 }
