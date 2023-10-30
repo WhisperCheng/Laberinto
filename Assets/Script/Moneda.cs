@@ -18,6 +18,7 @@ public class Moneda : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.tag == "Personaje")
+            Destroy(gameObject);
     }
 }

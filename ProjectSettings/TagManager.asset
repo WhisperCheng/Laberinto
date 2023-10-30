@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Monedas
   - Paredes
+  - Personaje
   layers:
   - Default
   - TransparentFX
