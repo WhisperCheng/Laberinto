@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class Llave : MonoBehaviour
 {
-    bool pillado;
+   
+    GameObject puerta;
 
     // Start is called before the first frame update
     void Start()
     {
-        pillado = false;
+        
+        puerta = GameObject.Find("Puerta");
     }
 
     // Update is called once per frame
@@ -23,15 +25,8 @@ public class Llave : MonoBehaviour
     {
         if (collision.gameObject.tag == "Personaje")
         {
-            Destroy(gameObject);
-            pillado = true;
-        }
-        if (pillado == true)
-        {
-            collision.gameObject.CompareTag("Puerta");
+            Destroy(puerta);
             Destroy(gameObject);
         }
- 
-
     }
 }
