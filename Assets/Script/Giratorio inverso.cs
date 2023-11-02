@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Giratorio : MonoBehaviour
+public class Giratorioinverso : MonoBehaviour
 {
+    // Start is called before the first frame update
 
     public float fuerza;
 
-    // Start is called before the first frame update
     void Start()
     {
         fuerza = 85f;
@@ -16,6 +16,6 @@ public class Giratorio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate (Vector3.forward * fuerza * Time.deltaTime);
+        transform.Rotate (Vector3.back * fuerza * Time.deltaTime);
     }
 }

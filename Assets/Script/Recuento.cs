@@ -28,7 +28,7 @@ public class Recuento : MonoBehaviour
         if (collision.gameObject.tag == "Monedas") 
         {
             monedas++;
-            recuento.text = monedas + " Monedas";
+            recuento.text = "Monedas = " + monedas;
         }
     }
 }

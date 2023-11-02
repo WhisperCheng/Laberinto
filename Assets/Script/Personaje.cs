@@ -11,6 +11,7 @@ public class Personaje : MonoBehaviour
     float tiempo;
     bool chocado;
     public float impulso;
+    float velocidad;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,8 @@ public class Personaje : MonoBehaviour
         rojo = GetComponent<SpriteRenderer>();
         tiempo = 0f;
         chocado = false;
-        impulso = 5f;
+        impulso = 2.5f;
+        velocidad = 1.5f;
     }
 
     // Update is called once per frame
@@ -45,7 +47,7 @@ public class Personaje : MonoBehaviour
         }
         else
         {
-            cuerpo.velocity = new Vector2(movHorizontal * 2, movVertical * 2);
+            cuerpo.velocity = new Vector2(movHorizontal * velocidad, movVertical * velocidad);
         }
 
     }

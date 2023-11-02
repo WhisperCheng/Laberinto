@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Lateral : MonoBehaviour
 {
-    public int velocidad;
+    public float velocidad;
     bool direccion;
 
 
@@ -12,7 +12,7 @@ public class Lateral : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velocidad = 1;
+        velocidad = 0.5f;
 
     }
 
