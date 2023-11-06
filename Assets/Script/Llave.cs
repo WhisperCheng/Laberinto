@@ -7,11 +7,12 @@ public class Llave : MonoBehaviour
 {
    
     GameObject puerta;
+    public AudioSource FXllave;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        FXllave = GameObject.Find("FXLlave").GetComponent<AudioSource>();
         puerta = GameObject.Find("Puerta");
     }
 
@@ -27,6 +28,7 @@ public class Llave : MonoBehaviour
         {
             Destroy(puerta);
             Destroy(gameObject);
+            FXllave.Play();
         }
     }
 }

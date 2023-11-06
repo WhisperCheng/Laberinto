@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Moneda : MonoBehaviour
 {
+
+    public AudioSource FXmoneda;
     // Start is called before the first frame update
     void Start()
     {
-        
+        FXmoneda = GameObject.Find("FXMoneda").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,5 +22,6 @@ public class Moneda : MonoBehaviour
     {
         if (collision.gameObject.tag == "Personaje")
             Destroy(gameObject);
+            FXmoneda.Play();
     }
 }
