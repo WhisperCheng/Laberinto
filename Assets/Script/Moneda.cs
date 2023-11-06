@@ -21,7 +21,9 @@ public class Moneda : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Personaje")
+        {
             Destroy(gameObject);
             FXmoneda.Play();
+        }
     }
 }
