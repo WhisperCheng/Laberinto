@@ -14,7 +14,7 @@ public class Recuento : MonoBehaviour
     void Start()
     {
         monedas = 0;
-        recuento.text = "Monedas";
+        recuento.text = "Monedas = 0";
     }
 
     // Update is called once per frame
