@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: TablaTexto
   m_TableCollectionNameGuidString: f3424d60bfdacef46a1c1657d201e504
-  m_Entries: []
+  m_Entries:
+  - m_Id: 15923109888
+    m_Key: PruebaTexto
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

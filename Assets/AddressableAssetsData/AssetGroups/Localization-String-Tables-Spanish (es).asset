@@ -16,7 +16,13 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 092479d526b82d942935dd634d313362
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: cf7290a35aefbf54cbec75f642e8965b
+    m_Address: TablaTexto_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 9ef1294ed0ee5f24c8cc238afa925c7b, type: 2}
   m_SchemaSet:
